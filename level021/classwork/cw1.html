@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>User Form</h3>
+
+<form>
+
+    <!-- ===================== -->
+    <!-- RADIO (Gender) -->
+    <!-- name ერთნაირი უნდა იყოს,
+         რომ მხოლოდ ერთი აირჩიოს -->
+    <!-- required → სავალდებულოა -->
+    <!-- ===================== -->
+
+    <p>Gender:</p>
+
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="gender" value="other">
+
+
+    <br><br>
+
+
+    <!-- CHECKBOX (Hobbies) -->
+    <!-- checkbox შეიძლება რამდენიმე ერთად -->
+     
+    <p>Hobbies:</p>
+
+    <label>
+        <input type="checkbox" name="hobbies[]" value="gaming"> Gaming
+    </label>
+
+    <label>
+        <input type="checkbox" name="hobbies[]" value="music"> Music
+    </label>
+
+    <label>
+        <input type="checkbox" name="hobbies[]" value="sports"> Sports
+    </label>
+
+    <label>
+        <input type="checkbox" name="hobbies[]" value="coding"> Coding
+    </label>
+
+
+    <br><br>
+
+
+    <!-- SELECT (Country) -->
+    <!-- select ჩამოსაშლელი სია -->
+    <!-- selected default არჩეული ელემენტი -->
+    <!-- required აუცილებელია არჩევა -->
+
+    <label for="country">Country:</label>
+
+    <select id="country" name="country" required>
+        <option value="usa">USA</option>
+        <option value="georgia" selected>Georgia</option>
+        <option value="germany">Germany</option>
+        <option value="japan">Japan</option>
+        <option value="france">France</option>
+    </select>
+
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

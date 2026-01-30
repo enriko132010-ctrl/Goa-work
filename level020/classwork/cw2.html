@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Create Post</h3>
+
+<!--
+form:
+action სად იგზავნება მონაცემები
+method როგორ იგზავნება (post/get)
+-->
+
+<form action="#" method="post">
+
+    <!--
+    label:
+    ტექსტს აკავშირებს input-თან
+    for უნდა ემთხვეოდეს input-ის id-ს
+    -->
+
+    <label for="title">Title</label>
+    <!--
+    type="text" → ტექსტის ველი
+    placeholder → მინიშნება
+    required → სავალდებულოა შევსება
+    -->
+    <input id="title" type="text" placeholder="შეიყვანე სათაური" required>
+    <br><br>
+
+
+    <label for="desc">Description</label>
+    <!--
+    textarea → მრავალსტრიქონიანი ტექსტი
+    -->
+    <textarea id="desc" placeholder="აღწერა" required></textarea>
+    <br><br>
+
+
+    <label for="img">Image</label>
+    <!--
+    type="file" → ფაილის ატვირთვა
+    -->
+    <input id="img" type="file" required>
+    <br><br>
+
+
+    <label for="date">Date</label>
+    <!--
+    type="date" → კალენდარი
+    -->
+    <input id="date" type="date">
+    <br><br>
+
+
+    <!--
+    submit → ფორმის გაგზავნა
+    -->
+    <input type="submit" value="Upload">
+
+</form>
+</body>
+</html>

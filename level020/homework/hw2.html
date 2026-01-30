@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Page 2 - Extra Info</h3>
+
+<form>
+
+    <p>gender:</p>
+    <label>
+        <input type="radio" name="gender" value="male" required> male
+    </label>
+    <label>
+        <input type="radio" name="gender" value="female"> female
+    </label>
+    <br><br>
+
+    <p>hobby:</p>
+    <label>
+        <input type="checkbox" name="hobbies[]" value="gaming"> Gaming
+    </label>
+    <label>
+        <input type="checkbox" name="hobbies[]" value="music"> Music
+    </label>
+    <label>
+        <input type="checkbox" name="hobbies[]" value="sports"> Sports
+    </label>
+    <br><br>
+
+    <label for="country">country:</label>
+    <select id="country" name="country" required>
+        <option value="usa">USA</option>
+        <option value="georgia" selected>Georgia</option>
+        <option value="germany">Germany</option>
+        <option value="japan">Japan</option>
+        <option value="france">France</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
