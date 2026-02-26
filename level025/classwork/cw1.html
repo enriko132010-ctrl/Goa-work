@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>CSS დავალება</title>
+
+        <!-- ================== INTERNAL CSS ================== -->
+        <style>
+            /* 
+        INTERNAL CSS იწერება <style> თეგში head-ში.
+        ის მოქმედებს მთელ გვერდზე.
+        */
+
+            /* 4) tag selector მძიმით */
+            h2,
+            .internal-paragraph {
+                color: blue;
+                /* ტექსტის ფერი */
+                font-size: 25px;
+                /* ტექსტის ზომა */
+            }
+
+            /* 5) დამატებითი სტილი */
+            .box {
+                width: 200px;
+                height: 100px;
+                background-color: lightgreen;
+                border: 3px solid black;
+                text-align: center;
+                line-height: 100px;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- 1) INLINE CSS -->
+        <!-- INLINE CSS იწერება პირდაპირ თეგში style ატრიბუტით -->
+
+        <h1 style="color: purple; text-align: center;">
+            ეს არის Inline CSS მაგალითი
+        </h1>
+
+        <p style="color: green;">
+            ეს პარაგრაფი გასტილულია inline css-ით
+        </p>
+
+
+        <!-- 3) 5 პარაგრაფი წითელი ტექსტით და ვარდისფერი ფონით -->
+        <p style="color: red; background-color: pink;">paragraph 1</p>
+        <p style="color: red; background-color: pink;">paragraph 2</p>
+        <p style="color: red; background-color: pink;">paragraph 3</p>
+        <p style="color: red; background-color: pink;">paragraph 4</p>
+        <p style="color: red; background-color: pink;">paragraph 5</p>
+
+
+        <!-- 4) internal css გამოყენებით -->
+        <h2> this is Internal CSS title </h2>
+        <p class="internal-paragraph">
+            this is p with internal css
+        </p>
+
+
+        <!-- 5) დამატებით გასტილული ელემენტი -->
+        <div class="box">
+            Styled Box
+        </div>
+
+    </body>
+
+    </html>
+</body>
+
+</html>

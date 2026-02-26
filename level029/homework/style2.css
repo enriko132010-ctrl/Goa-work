@@ -1,0 +1,21 @@
+.simple-table {
+    width: 60%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.simple-table th {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.simple-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}
+
+.simple-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

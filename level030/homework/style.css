@@ -1,0 +1,173 @@
+/* =============================
+           1) POSITION PROPERTIES
+           ============================= */
+
+/* static - default პოზიცია, ელემენტი ჩვეულებრივ დოკუმენტის ნაკადშია */
+.static-example {
+    position: static;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* relative - ელემენტის პოზიცია დამოკიდებულია მის ნორმალურ ადგილას */
+.relative-example {
+    position: relative;
+    top: 10px;
+    /* გადაადგილება ზედა მხარეს */
+    left: 20px;
+    /* გადაადგილება მარცხნიდან */
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* absolute - ელემენტი პოზიციონირდება თავის ყველაზე ახლო position != static მშობელზე */
+.absolute-parent {
+    position: relative;
+    /* მშობელი საჭიროა absolute შვილებისთვის */
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.absolute-example {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 10px;
+}
+
+/* fixed - ელემენტი ეკრანზე ფიქსირდება, სკროლის დროს არ იძვრის */
+.fixed-example {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+
+/* sticky - ელემენტი სკროლირებისას "ჩარჩენილია" სანამ მშობლის ზღვარს მიაღწევს */
+.sticky-example {
+    position: sticky;
+    top: 0;
+    background-color: pink;
+    padding: 10px;
+}
+
+/* =============================
+           2) Z-INDEX
+           ============================= */
+.z-index-example1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    /* ქვემოთ */
+}
+
+.z-index-example2 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    /* ზემოდან */
+}
+
+/* =============================
+           4) Centering a child div using position
+           ============================= */
+.parent-center {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 20px auto;
+}
+
+.child-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: cyan;
+    padding: 20px;
+}
+
+/* =============================
+           5) Fixed navigation + scrollable divs
+           ============================= */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.content div {
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+}
+
+.content div:nth-child(1) {
+    background-color: crimson;
+}
+
+.content div:nth-child(2) {
+    background-color: teal;
+}
+
+.content div:nth-child(3) {
+    background-color: purple;
+}
+
+.content div:nth-child(4) {
+    background-color: orange;
+}
+
+.content div:nth-child(5) {
+    background-color: green;
+}
+
+.content div:nth-child(6) {
+    background-color: blue;
+}
+
+.content div:nth-child(7) {
+    background-color: brown;
+}
+
+.content div:nth-child(8) {
+    background-color: gray;
+}
+
+.content div:nth-child(9) {
+    background-color: pink;
+}
+
+.content div:nth-child(10) {
+    background-color: navy;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    /* სივრცე ნავიგაციისთვის */
+}
