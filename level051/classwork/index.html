@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form id="registerForm">
+
+         inputის დახმარებით შეემოგვაქ მომხმარებლის სახელი 
+        <input type="text" name="username" placeholder="Name" required>
+         აქ იმელი შემოვატანინე 
+        <input type="email" name="email" placeholder="Email" required>
+         აქ კიდევ პაროლი 
+        <input type="password" name="password" placeholder="password" required>
+         აქ დავამატეთ ღილაკი მასზე დაჭერის შემთხვევაში კი form აგზავნის submit event_ს 
+        <button type="submit">Register</button>
+    </form>
+
+     აქ გამოვიტანე აქაუნთების სია 
+    <ul id="accountList"></ul> -->
+
+
+
+    <form>
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="number" name="price" placeholder="Price" required />
+        <select name="category" required>
+            <option value="" disabled selected>Select category</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+        </select>
+
+        <button>Submit</button>
+    </form>
+
+    <select id="filter-category">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+    </select>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    
+
+    <script src="script.js"></script>
+    <script src="cw2.js"></script>
+</body>
+</html>

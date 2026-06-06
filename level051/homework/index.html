@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studennt system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Register</h2>
+    <input type="text" id="username" placeholder="Username">
+    <button type="button" id="registerBtn">Register</button>
+    <p id="roleInfo"></p>
+
+    <hr>
+
+    <h2>Add Student</h2>
+    <form id="StudentForm">
+        <input name="name" placeholder="Name" required>
+        <input name="surname" type="text" placeholder="Surname" required>        
+        <input name="age" type="number" placeholder="Age" required>
+        <input name="grade" type="number" placeholder="Grade" required>
+        <input name="subject" type="text" placeholder="Subject" required>
+        <button type="submit">Add</button>        
+    </form>
+   <hr>
+
+    <select id="subjectFilter">
+    <option value="">All Subjects</option>
+    </select>
+
+    <button id="sortGrade">Sort by Grade</button>
+
+<table>
+  <td>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Age</th>
+      <th>Grade</th>
+      <th>Subject</th>
+      <th>Actions</th>
+    </tr>
+  </td>
+  <tbody id="tableBody"></tbody>
+</table>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(73, 105, 142);
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(174, 222, 29);
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 340px;
+    padding: 10px;
+}
+
+input {
+    width: 150px;
+}
+h1{
+    text-align: center;
+}
+button {
+    display: flex;
+    background-color: rgb(78, 78, 142);
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    width: 140px;
+}
+
+button, h1, input, textarea {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.button:hover{
+    background-color: rgb(125, 118, 118);
+    font-size: 18px;
+    transition: 0.4s ease;
+    transform: scale(1.10);
+
+}

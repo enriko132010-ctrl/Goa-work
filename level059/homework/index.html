@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Table</title>
+</head>
+<body>
+
+    <form id="formElement">
+        <label for="product">Product Name</label>
+        <input
+            type="text"
+            name="productName"
+            placeholder="Enter product name"
+            required
+        >
+        <button type="submit">Add Product To Table</button>
+    </form>
+
+    <br><br>
+
+    <!-- TABLE -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product ID</th>
+                <th>Delete Product</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
